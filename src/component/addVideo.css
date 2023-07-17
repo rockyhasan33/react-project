@@ -1,0 +1,77 @@
+/* .add-btn {
+    grid-column: 1 / -1;
+    padding: 0.7rem 1.3rem;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    background: #00f7ff;
+    color: #000;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    transition: all 100ms linear;
+}
+
+.add-btn:hover {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+    background: #000;
+    color: #00f7ff;
+    border: 0.15rem solid #00f7ff;
+} */
+
+
+form {
+    position: sticky;
+    background: #c674ee;
+    padding: 2rem;
+    border-radius: 1rem;
+    top: 0;
+    grid-column: 1/ -1;
+    display: grid;
+    gap: 1rem;
+    z-index: 1;
+}
+
+form input[type=text], button {
+    background: #00f7ff;
+    border: 0.15rem solid #000;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    outline: none;
+    letter-spacing: 0.15rem;
+    text-transform: capitalize;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+form input[type=text]:hover, button:hover  {
+    background: #000;
+    color: #fff;
+    border: 0.15rem solid #00f7ff;
+    transition: all 0.2s linear;
+}
+
+form button, button::placeholder {
+    cursor: pointer;
+}
+
+form input::placeholder {
+    color: rgb(101, 99, 99);
+}
+
+@media screen and (max-width: 800px) {
+    form input[type=text], button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    form input[type=text], button {
+        font-size: 0.85rem;
+    }
+
+    
+}
+

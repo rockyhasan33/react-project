@@ -1,0 +1,70 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px , 1fr));
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+
+
+.poster {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin: 0.3rem 1rem;
+    text-transform: capitalize;
+}
+
+.channelName {
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin: 0.3rem 1rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.channelName .verified > img {
+    position: absolute;
+    width: 20px;
+    top: 2px;
+    height: 20px;
+}
+
+.verified {
+    margin-left: 0.3rem;
+}
+
+.video-content {
+    display: flex;
+    margin: 0.3rem 1rem;
+}
+
+.video-content .view {
+    margin-right: 2rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.video-content .time {
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
